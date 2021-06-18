@@ -1,0 +1,42 @@
+
+//resetando as caracteristicas iniciais
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6ac1e;   
+}
+
+.logoBar {
+    background-color: #f6ac1e;
+    display: flex;
+    justify-content: center;
+
+    .logo-img {
+        width: 16rem;
+        padding: 1rem;
+    }
+}
+
+.navbar{
+    background-color: #de0010;
+}
+
+//bold
+#link-style {
+    color: #fff;
+    font-weight: 400;
+}
+
+//qdo passar o mouse fica um pouco menos bold
+#link-style:hover{
+    font-weight: 300;
+}
+
+.app-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
