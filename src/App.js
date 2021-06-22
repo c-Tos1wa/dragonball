@@ -2,14 +2,16 @@ import React from 'react'
 import logo from './img/logo.png'
 
 import {ReadAll} from './componentes/readAll/ReadAll'
+import {ReadSingle} from './componentes/readSingle/readSingle'
 import {Create} from './componentes/create/Create'
 import {DeleteAll} from './componentes/delete-all/DeleteAll'
 import {About} from './componentes/about/About'
 
 import './styles/app.scss'
-import 'bootstrap/dist/css/bootstrap.min.css'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
 import {Navbar, Nav, Container, Row, Col} from 'react-bootstrap'
+
 import {Switch, Route} from 'react-router-dom'
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
               <Route path="/create" component={Create}></Route>
               <Route path="/delete-all" component={DeleteAll}></Route>
               <Route path="/about" component={About}></Route>
+              <Route path="/view/:id" component={ReadSingle}></Route>
             </Switch>
           </Col>
         </Row>
