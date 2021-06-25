@@ -11,14 +11,12 @@ export class Create extends Component {
         }
     }
 
-    //é assíncrona pq espera os dados da API chegar
     submitHandler = async event => {
-        //depois de mandar dados pro servidor, previnir q volte ao padrão
+        
         event.preventDefault(); 
 
         const { name, imageUrl } = event.target;
-        
-        //objeto em que se pega os dados passados
+          
         const item = {
             name: name.value,
             imageUrl: imageUrl.value
@@ -28,15 +26,14 @@ export class Create extends Component {
             isLoading: true
         })
 
-        //esperar carregar os dados (a rota e o objeto) enviados
+        
         const request = await Api.buildApiPostRequest(
             Api.createUrl(), 
             item
             ).catch(e => {
                 console.error('Erro ao tentar adicionar o item ao banco: ', e);
             })
-        
-        //reinicializar o estado
+
         this.setState({
             isLoading: false
         })
@@ -65,7 +62,7 @@ export class Create extends Component {
                     <Form.Text className="text-muted">A imagem em questão será exibida na lista de itens.
                     Certifique-se de que essa URL é uma URL válida</Form.Text>
                 </Form.Group>
-                <Button variant="primary" type="submit">Enviar</Button>
+                <Button variant="primary" type="submit">Criar</Button>
             </Form>
             </>
         )

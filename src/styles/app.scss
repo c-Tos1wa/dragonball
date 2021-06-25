@@ -1,12 +1,11 @@
 
-//resetando as caracteristicas iniciais
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+html body {
     background-color: #f6ac1e;
     color: #fff;
     text-align: center;  
@@ -27,13 +26,11 @@ body {
         font-weight: 400;
     }
     
-    //bold
     #link-style {
         color: #fff;
         font-weight: 400;
     }
     
-    //qdo passar o mouse fica um pouco menos bold
     #link-style:hover{
         font-weight: 300;
     }

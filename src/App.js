@@ -5,7 +5,9 @@ import {ReadAll} from './componentes/readAll/ReadAll'
 import {ReadSingle} from './componentes/readSingle/readSingle'
 import {Create} from './componentes/create/Create'
 import {DeleteAll} from './componentes/delete-all/DeleteAll'
+import {Delete} from './componentes/delete/delete'
 import {About} from './componentes/about/About'
+import {Update} from './componentes/update/update'
 
 import './styles/app.scss'
 
@@ -39,6 +41,8 @@ function App() {
               <Route path="/delete-all" component={DeleteAll}></Route>
               <Route path="/about" component={About}></Route>
               <Route path="/view/:id" component={ReadSingle}></Route>
+              <Route path="/delete/:id" component={Delete}></Route>
+              <Route path='/update/:id' component={Update}></Route>
             </Switch>
           </Col>
         </Row>
