@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import { Card, Col } from 'react-bootstrap'
 import { Route } from 'react-router-dom'
-//import '../../styles/itemCard.scss'
+import '../../styles/itemCard.scss'
 
 export class ItemCard extends Component {
   constructor(props){

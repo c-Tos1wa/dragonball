@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import { Card, Button } from 'react-bootstrap'
 import { Api } from '../../api/api'
-import '../../styles/delete.scss'
+import '../../styles/deleteAll.scss'
 
 export class DeleteAll extends Component {
     constructor(props){

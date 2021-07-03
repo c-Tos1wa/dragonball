@@ -32,7 +32,7 @@ function App() {
         </Nav>
       </Navbar>
 
-      <Container className="app-container">
+      <Container>
         <Row>
           <Col>
             <Switch>

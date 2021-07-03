@@ -1,0 +1,22 @@
+img.card-img{
+  width: 15rem;
+  justify-content: center;
+}
+
+div.card{
+  align-items: center;
+}
+
+p.card-text{
+  text-align: justify;
+}
+
+.btn.btn-primary{
+  background-color: #de0010;
+  border-color:#fff;
+}
+
+.bt.btn-primary:hover{
+  background-color: #db222f;
+  border-color: #fff;
+}

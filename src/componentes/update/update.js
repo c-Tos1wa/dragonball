@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import { Form, Button } from 'react-bootstrap'
-//import '../../styles/update.scss'
 import { Api } from '../../api/api'
+import '../../styles/update.scss'
 
 export class Update extends Component {
     constructor(props){

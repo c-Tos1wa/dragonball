@@ -9,3 +9,11 @@
 .actions.btn:last-child {
   margin-right: 0.5 rem;
 }
+
+.info.container{
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
